@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Planner • Planner</title>
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3490dc">
+
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('Service Worker registered'))
+      .catch(err => console.log(err));
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="library">
+<h2>Perpustakaan Mingguan</h2>
+<div class="tabs" id="dayTabs"></div>
+<div id="activityLibrary"></div>
+<textarea id="activityEditor" rows="6" placeholder="Satu baris = satu aktiviti"></textarea>
+<div class="flex gap-2 mt-2">
+<button id="saveLibrary">Simpan & Kemas Kini</button>
+<button id="resetLibrary">Reset Hari</button>
+</div>
+
+<hr>
+<h3>Backup / Restore</h3>
+<button id="exportBtn">Export Planner</button>
+<input type="file" id="importFile" style="display:none">
+<button id="importBtn">Import Planner</button>
+</div>
+
+<div class="schedule">
+<h2>Jadual (Triple Click untuk Kosongkan)</h2>
+<div id="scheduleSlots"></div>
+<div id="message"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

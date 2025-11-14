@@ -1,0 +1,65 @@
+{
+  "library": {
+    "Isnin": [
+      "Baca Buku",
+      "Senaman",
+      "Solat",
+      "Rehat",
+      "Makan"
+    ],
+    "Selasa": [
+      "Baca Buku",
+      "Senaman",
+      "Solat",
+      "Rehat",
+      "Makan"
+    ],
+    "Rabu": [
+      "Baca Buku",
+      "Senaman",
+      "Solat",
+      "Rehat",
+      "Makan"
+    ],
+    "Khamis": [
+      "Baca Buku",
+      "Senaman",
+      "Solat",
+      "Rehat",
+      "Makan"
+    ],
+    "Jumaat": [
+      "Baca Buku",
+      "Senaman",
+      "Solat",
+      "Rehat",
+      "Makan"
+    ],
+    "Sabtu": [
+      "Baca Buku",
+      "Senaman",
+      "Solat",
+      "Rehat",
+      "Makan"
+    ],
+    "Ahad": [
+      "Baca Buku",
+      "Senaman",
+      "Solat",
+      "Rehat",
+      "Makan"
+    ]
+  },
+  "schedule": {
+    "1": "Baca Buku",
+    "2": "Senaman",
+    "3": "Solat",
+    "4": "Rehat"
+  },
+  "scheduleDone": {
+    "1": false,
+    "2": false,
+    "3": false,
+    "4": false
+  }
+}
